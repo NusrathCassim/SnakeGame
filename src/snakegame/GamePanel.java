@@ -39,6 +39,7 @@ public class GamePanel extends JPanel implements ActionListener{
         Start();
     }
     public void Start(){
+        //Everthing starts from here
         newDot();
         running = true;
         timer = new Timer(Delay, this);
@@ -128,7 +129,7 @@ public class GamePanel extends JPanel implements ActionListener{
             running = false;
         }
         //bottom
-        if(x[0]> Screen_height ){
+        if(y[0]> Screen_height ){
             running = false;
         }
         if(!running){
